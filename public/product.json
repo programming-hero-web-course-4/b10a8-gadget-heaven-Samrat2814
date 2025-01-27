@@ -1,0 +1,242 @@
+[
+  {
+    "product_id": "1",
+    "product_title": "Smartphone Case",
+    "product_image": "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL3Jhd3BpeGVsb2ZmaWNlOV9iYWNrX3ZpZXdfd2hpdGVfc21hcnRwaG9uZV9pbl9naXJsX2hhbmRfY2xlYXJfY182YWM3ZmMyMS1jMGU2LTRlMTUtYjUzMi05YTJhZmMxZGY4NmMtcm03MTUtbW9ja3VwXzIuanBn.jpg",
+    "category": "Phones",
+    "price": 1.5,
+    "description": "Durable and stylish smartphone case with shock absorption and scratch resistance.",
+    "specification": [
+      "Material: TPU",
+      "Shock Absorbing",
+      "Fits models: iPhone 12/13",
+      "Weight: 50g"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "other_fields": {
+      "brand": "CaseCraft",
+      "color": "Blue"
+    }
+  },
+  {
+    "product_id": "2",
+    "product_title": "Noise Cancelling Earbuds",
+    "product_image": "https://images.squarespace-cdn.com/content/v1/5beb251ab40b9dd2724c2f46/dd2a6658-f410-458c-9fab-9441ceb9d656/Earfun+Air+Pro+4+charging+case.jpeg",
+    "category": "Phones",
+    "price": 3.5,
+    "description": "Compact noise-cancelling earbuds with premium sound quality and long battery life.",
+    "specification": [
+      "Bluetooth 5.2",
+      "Noise Cancelling",
+      "Battery Life: 10 hours",
+      "Charging Case"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "other_fields": {
+      "brand": "AudioZen",
+      "color": "White"
+    }
+  },
+  {
+    "product_id": "3",
+    "product_title": "Gaming Laptop",
+    "product_image": "https://www.pcworld.com/wp-content/uploads/2024/03/alienware-gaming-laptop.jpg?quality=50&strip=all&w=1024",
+    "category": "Laptops",
+    "price": 199.99,
+    "description": "High-performance gaming laptop with an Intel i7 processor and NVIDIA RTX graphics.",
+    "specification": [
+      "Processor: Intel i7",
+      "Graphics: NVIDIA RTX",
+      "RAM: 16GB",
+      "Storage: 512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "other_fields": {
+      "brand": "GamePro",
+      "warranty": "2 years"
+    }
+  },
+  {
+    "product_id": "4",
+    "product_title": "Business Laptop",
+    "product_image": "https://cdn.thewirecutter.com/wp-content/media/2024/07/businesslaptops-2048px-233284-3x2-1.jpg?auto=webp&quality=75&crop=4:3,smart&width=1024",
+    "category": "Laptops",
+    "price": 899.99,
+    "description": "Slim and lightweight business laptop with a 10th Gen Intel processor and long battery life.",
+    "specification": [
+      "Processor: Intel i5",
+      "RAM: 8GB",
+      "Storage: 256GB SSD",
+      "Battery Life: 12 hours"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "other_fields": {
+      "brand": "BizTech",
+      "color": "Silver"
+    }
+  },
+  {
+    "product_id": "5",
+    "product_title": "iPhone 13",
+    "product_image": "https://mcsolution.com.bd/wp-content/uploads/2021/09/iPhone-13-release.webp",
+    "category": "iPhone",
+    "price": 101.99,
+    "description": "Apple iPhone 13 with A15 Bionic chip, dual-camera system, and Super Retina XDR display.",
+    "specification": [
+      "Processor: A15 Bionic",
+      "Storage: 128GB",
+      "Screen Size: 6.1 inches",
+      "Camera: Dual 12MP"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "other_fields": {
+      "brand": "Apple",
+      "color": "Blue"
+    }
+  },
+  {
+    "product_id": "6",
+    "product_title": "iPhone 14 Pro",
+    "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ7r-S0RoNejo3V1UXW45derIFieBseMFGjA&s",
+    "category": "iPhone",
+    "price": 999.99,
+    "description": "Apple iPhone 14 Pro with A16 Bionic chip, triple-camera system, and ProMotion display.",
+    "specification": [
+      "Processor: A16 Bionic",
+      "Storage: 256GB",
+      "Screen Size: 6.1 inches",
+      "Camera: Triple 12MP"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "other_fields": {
+      "brand": "Apple",
+      "color": "Graphite"
+    }
+  },
+  {
+    "product_id": "7",
+    "product_title": "MacBook Pro",
+    "product_image": "https://techcrunch.com/wp-content/uploads/2024/11/CMC_8144.jpg",
+    "category": "MacBook",
+    "price": 199.99,
+    "description": "Apple MacBook Pro with M1 chip, 16GB RAM, and 512GB SSD.",
+    "specification": [
+      "Processor: Apple M1",
+      "RAM: 16GB",
+      "Storage: 512GB SSD",
+      "Screen Size: 13.3 inches"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "other_fields": {
+      "brand": "Apple",
+      "color": "Silver"
+    }
+  },
+  {
+    "product_id": "8",
+    "product_title": "MacBook Air",
+    "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUMyAZnBaQzrU13Wy27hTv6bJbivPxtBESQA&s",
+    "category": "MacBook",
+    "price": 99.99,
+    "description": "Lightweight MacBook Air with M1 chip, 8GB RAM, and 256GB SSD.",
+    "specification": [
+      "Processor: Apple M1",
+      "RAM: 8GB",
+      "Storage: 256GB SSD",
+      "Screen Size: 13.3 inches"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "other_fields": {
+      "brand": "Apple",
+      "color": "Space Gray"
+    }
+  },
+  {
+    "product_id": "9",
+    "product_title": "Gaming Mouse",
+    "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk5-XNwCch_g5C1qQpo0BmWLGH-IUOxM7-4g&s",
+    "category": "Accessories",
+    "price": 3.99,
+    "description": "Ergonomic gaming mouse with customizable RGB lighting and 7 programmable buttons.",
+    "specification": [
+      "DPI: 16000",
+      "RGB Lighting",
+      "Programmable Buttons: 7",
+      "Cable Length: 1.8m"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "other_fields": {
+      "brand": "GamerTech",
+      "color": "Black"
+    }
+  },
+  {
+    "product_id": "10",
+    "product_title": "Portable Power Bank",
+    "product_image": "https://media.wired.com/photos/6628430256b0d118c860c389/master/w_960,c_limit/Nimble-Champ-(Series-2)-Portable-Charger-Reviewer-Photo-SOURCE-Simon-Hill.jpg",
+    "category": "Accessories",
+    "price": 4.9,
+    "description": "Lightweight power bank with 10000mAh capacity and dual USB ports.",
+    "specification": [
+      "Capacity: 10000mAh",
+      "USB Ports: 2",
+      "Weight: 200g",
+      "Fast Charging Support"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "other_fields": {
+      "brand": "ChargeMax",
+      "color": "Black"
+    }
+  },
+  {
+    "product_id": "11",
+    "product_title": "Fitness Tracker",
+    "product_image": "https://pyxis.nymag.com/v1/imgs/921/c0c/d56eeaa21522d8918ee1cedde9dea91293.rsquare.w600.jpg",
+    "category": "Smart Watches",
+    "price": 5.99,
+    "description": "Water-resistant fitness tracker with heart rate monitoring and step counting.",
+    "specification": [
+      "Heart Rate Monitor",
+      "Step Counter",
+      "Water Resistant: 5ATM",
+      "Battery Life: 7 days"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "other_fields": {
+      "brand": "FitTrack",
+      "color": "Black"
+    }
+  },
+  {
+    "product_id": "12",
+    "product_title": "Smartwatch",
+    "product_image": "https://i.pcmag.com/imagery/roundups/0634CGyLGOHgKlIbVidl2zZ-40.fit_lim.size_1050x.jpg",
+    "category": "Smart Watches",
+    "price": 7.99,
+    "description": "Stylish smartwatch with fitness tracking, heart rate monitoring, and phone notifications.",
+    "specification": [
+      "Fitness Tracking",
+      "Heart Rate Monitor",
+      "Water Resistant: 3ATM",
+      "Battery Life: 5 days"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "other_fields": {
+      "brand": "SmartTech",
+      "color": "Silver"
+    }
+  }
+]
