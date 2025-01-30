@@ -5,32 +5,35 @@ import "react-toastify/dist/ReactToastify.css";
 const WishList = () => {
   const [wishlist, setWishlist] = useState([]);
 
-  // Load wishlist data from localStorage on component mount
   useEffect(() => {
-    const storedWishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    const storedWishlist = Array.isArray(JSON.parse(localStorage.getItem("wishlist")))
+      ? JSON.parse(localStorage.getItem("wishlist"))
+      : [];
     setWishlist(storedWishlist);
   }, []);
 
-  // Handle item removal from wishlist
-  const removeItem = (indexToRemove) => {
+  const removeItem = (productIdToRemove) => {
     const updatedWishlist = wishlist.filter(
-      (_, index) => index !== indexToRemove
+      (item) => item.product_id !== productIdToRemove
     );
-    setWishlist(updatedWishlist); // Update the state
-    localStorage.setItem("wishlist", JSON.stringify(updatedWishlist)); // Update localStorage
-
-    // Show toast notification
+    setWishlist(updatedWishlist);
+    localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
     toast.success("Item removed from wishlist!");
   };
 
-  // Handle adding an item to the cart
   const addToCart = (item) => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
-    const updatedCart = [...storedCart, item];
-    localStorage.setItem("cart", JSON.stringify(updatedCart)); // Update localStorage
+    const isItemInCart = storedCart.some(
+      (cartItem) => cartItem.product_id === item.product_id
+    );
 
-    // Show toast notification
-    toast.success(`${item.product_title} added to cart!`);
+    if (!isItemInCart) {
+      const updatedCart = [...storedCart, item];
+      localStorage.setItem("cart", JSON.stringify(updatedCart));
+      toast.success(`${item.product_title} added to cart!`);
+    } else {
+      toast.info(`${item.product_title} is already in the cart!`);
+    }
   };
 
   return (
@@ -42,32 +45,34 @@ const WishList = () => {
         <p>Your wishlist is empty.</p>
       ) : (
         <div className="grid gap-4">
-          {wishlist.map((item, index) => (
+          {wishlist.map((item) => (
             <div
-              key={index}
+              key={item.product_id || item.product_title}
               className="flex items-center justify-between border p-4 rounded shadow"
             >
               <img
-                src={item.product_image}
-                alt={item.product_title}
+                src={item.product_image || "/default-image.jpg"}
+                alt={item.product_title || "Product"}
                 className="w-20 h-20 object-cover rounded"
               />
               <div className="flex-1 ml-4">
                 <h2 className="text-lg text-gray-600 font-semibold">
-                  {item.product_title}
+                  {item.product_title || "No Title Available"}
                 </h2>
-                <p className="text-gray-600">Price: {item.price}</p>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="text-gray-600">Price: {item.price || "N/A"}</p>
+                <p className="text-gray-600">
+                  {item.description || "No description available."}
+                </p>
                 <button
                   onClick={() => addToCart(item)}
-                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-600"
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
                 >
                   Add to Cart
                 </button>
               </div>
               <div className="flex gap-2">
                 <button
-                  onClick={() => removeItem(index)}
+                  onClick={() => removeItem(item.product_id)}
                   className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
                 >
                   <svg
