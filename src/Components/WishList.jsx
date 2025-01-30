@@ -12,6 +12,7 @@ const WishList = () => {
     setWishlist(storedWishlist);
   }, []);
 
+  // Remove item from wishlist
   const removeItem = (productIdToRemove) => {
     const updatedWishlist = wishlist.filter(
       (item) => item.product_id !== productIdToRemove
@@ -21,6 +22,7 @@ const WishList = () => {
     toast.success("Item removed from wishlist!");
   };
 
+  // Add to cart and remove from wishlist
   const addToCart = (item) => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
     const isItemInCart = storedCart.some(
@@ -30,6 +32,10 @@ const WishList = () => {
     if (!isItemInCart) {
       const updatedCart = [...storedCart, item];
       localStorage.setItem("cart", JSON.stringify(updatedCart));
+
+      // Remove from wishlist
+      removeItem(item.product_id);
+
       toast.success(`${item.product_title} added to cart!`);
     } else {
       toast.info(`${item.product_title} is already in the cart!`);
